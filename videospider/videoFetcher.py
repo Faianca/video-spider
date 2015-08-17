@@ -2,20 +2,26 @@ __author__ = 'jmeireles'
 
 import requester
 import domains
+from rfc3987 import parse
 
 
-class VideoFetcher:
+class Spider:
 
     fetcher = ''
 
-    def __init__(self, domaininfo):
+    def __init__(self):
+        pass
+
+    def build_domain(self, url):
         """
         :param domaininfo:
         :return:
         """
-        self.domain_info = domaininfo
-        self.is_valid(domaininfo['domain'])
-        module = self.my_import('domains.'+domaininfo['domain'])
+        d = parse(url, rule='IRI')
+        li = d['authority'].split('.')
+        domain = li[len(li) - 2]
+        self.is_valid(domain)
+        module = self.my_import('domains.'+domain)
         self.fetcher = module.Fetcher(requester.Requester())
 
     def my_import(self, name):
@@ -33,11 +39,11 @@ class VideoFetcher:
         if domain not in domains.__all__:
             raise ValueError("Fetcher does not support this domain")
 
-    def fetch(self):
+    def fetch(self, url):
         """
         load the
         :return:
         """
-        pass
-        return self.fetcher.fetch(self.domain_info['url'])
+        self.build_domain(url)
+        return self.fetcher.fetch(url)
 

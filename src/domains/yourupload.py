@@ -2,13 +2,13 @@ __author__ = 'jmeireles'
 import re, urllib
 from fetcher import AbstractFetcher
 
-
+1
 class Fetcher(AbstractFetcher):
 
     def fetch(self, url):
         soup = self.requester.get(url)
-        print soup.text
-        test = re.search(r"(?<=url:\s)([\"'])(?P<url>https?.+)\1", soup.text)
+
+        test = re.search(r"(?<=file:\s)([\"'])(?P<url>https?.+)\1", soup.text)
 
         if test is None:
             return

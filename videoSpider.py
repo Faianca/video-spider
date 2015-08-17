@@ -4,7 +4,6 @@ __author__ = 'Faianca'
 from src.videoFetcher import VideoFetcher
 from optparse import OptionParser
 from rfc3987 import parse
-import re
 
 
 def fetch(url):

@@ -1,7 +1,8 @@
 __author__ = 'jmeireles'
-import re, urllib
+import re
 from fetcher import AbstractFetcher
 import jsbeautifier.unpackers.packer as packer
+
 
 class Fetcher(AbstractFetcher):
 

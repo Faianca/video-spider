@@ -36,9 +36,11 @@ VideoSpider currently supports this providers.
 * movshare
 * novamov
 * playbb
-* playpand
+* playpanda
 * videowing
 * videozoo
 * pornhub
 * videoweed
 * video44
+* yourupload
+

@@ -40,3 +40,5 @@ VideoSpider currently supports this providers.
 * videowing
 * videozoo
 * pornhub
+* videoweed
+* video44

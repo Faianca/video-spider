@@ -12,5 +12,7 @@ if __name__ == '__main__':
     (options, args) = parser.parse_args()
     if options.url is None:
         raise ValueError('Please add a valid url ex. -u http://google.pt')
+
     spider = Spider()
+
     print spider.fetch(options.url)

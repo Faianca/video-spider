@@ -37,7 +37,7 @@ class Spider:
         :param domain:
         """
         if domain not in domains.__all__:
-            raise ValueError("Fetcher does not support this domain")
+            raise ValueError("Fetcher does not support this domain " + domain)
 
     def fetch(self, url):
         """

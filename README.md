@@ -48,4 +48,4 @@ VideoSpider currently supports this providers.
 * videonest
 * animeultima
 * yourupload
-
+* vidbull

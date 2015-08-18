@@ -42,3 +42,8 @@ VideoSpider currently supports this providers.
 * pornhub
 * videoweed
 * video44
+* arkvid
+* mp4upload
+* auengine
+* videonest
+* animeultima

@@ -8,8 +8,8 @@ Videospider is a spider to fetch video links from famous providers.
 ```sh
 $ git clone https://github.com/Faianca/video-spider.git videospider
 $ cd videospider
-$ pip install -r "requirements.txt"
-$ python setup.py install
+$ sudo pip install -r "requirements.txt"
+$ sudopython setup.py install
 ```
 
 ### Usage Example:
@@ -18,7 +18,7 @@ $ python main.py -u  "http://embed.novamov.com/embed.php?width=600&height=432&v=
 ```
 #### Video spider as a command
 ```sh
-$ mv main.py /usr/bin/videospider
+$ sudo mv main.py /usr/bin/videospider
 $ videospider -u "http://embed.novamov.com/embed.php?width=600&height=432&v=492730987cf26"
 ```
 ### Dev:
@@ -36,7 +36,7 @@ VideoSpider currently supports this providers.
 * movshare
 * novamov
 * playbb
-* playpand
+* playpanda
 * videowing
 * videozoo
 * pornhub
@@ -47,3 +47,5 @@ VideoSpider currently supports this providers.
 * auengine
 * videonest
 * animeultima
+* yourupload
+

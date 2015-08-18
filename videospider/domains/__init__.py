@@ -1,4 +1,7 @@
-__author__ = 'jmeireles'
+__title__ = 'videoSpider'
+__author__ = 'Jorge Faianca'
+__license__ = 'MIT License'
+__copyright__ = 'Copyright 2015 Jorge Faianca'
 
 import os
 import glob

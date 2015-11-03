@@ -40,7 +40,7 @@ class Requester:
         else:
             response = requests.get(url, headers=headers)
 
-        return bs4.BeautifulSoup(response.text)
+        return bs4.BeautifulSoup(response.text, "lxml")
 
 
     @staticmethod
